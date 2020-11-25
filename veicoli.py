@@ -1,3 +1,7 @@
+print("Questo programma fornisce i dati relativi ai veicoli transitati in entrata ad un casello autostradale in x giorni")
+input()
+print("Il programma ti chiedeà il numero di veicoli fino a quando tu non inserirai il valore 0")
+input()
 giorno = 0
 somma= 0
 veicoli = 1
