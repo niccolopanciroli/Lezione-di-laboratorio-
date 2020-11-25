@@ -1,6 +1,9 @@
 stipendio = 0
 lavoratore = 0
 somma = 0
+print("Questo programma ti permette di calcolare la media degli stipendi dei dipendendenti di una azienda")
+input()
+print("Per terminare di inserire dei dati digitare il numero -1")
 while stipendio != -1:
     stipendio = float(input("Inserisci stipendio lavaratore "))
     somma = stipendio + somma
