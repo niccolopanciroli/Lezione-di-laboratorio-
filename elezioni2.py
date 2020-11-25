@@ -1,14 +1,16 @@
 print("ELEZIONI D'AMERICA")
-Biden = int(input("Quanti voti ha ricevuto Biden alle elezioni? "))
-Trump = int(input("Quanti voti ha ricevuto Trump alle elezioni? "))
-candidati = []
-nomi = ["Trump", "Biden"]
-candidati.append(Biden)
-candidati.append(Trump)
+input()
+x = str(input("Inserisci il nome del primo elettore "))
+y = str(input("Inserisci il nome del secondo elettore "))
+vx = float(input("Quanti voti ha ricevuto alle elezioni " + x + "? "))
+vy = float(input("Quanti voti ha ricevuto alle elezioni " + y + "? "))
+nomi = []
+voti = []
+nomi.append(x)
+nomi.append(y)
+voti.append(vx)
+voti.append(vy)
 nomi.sort()
-print("Elenco partecipanti in ordine alfabetico", nomi)
-if Biden > Trump:
-    print("Elenco in base al punteggio in ordine decrescente", candidati)
-elif Trump > Biden:
-    candidati.reverse()
-    print("Elenco in base al punteggio in ordine decrescente", candidati)
+print("Ordine alfabetico dei candidati: ", nomi)
+voti.sort(reverse= True, key=int)
+print("I voti candidati in ordine decrescente", voti)
